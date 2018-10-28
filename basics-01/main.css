@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* now the width includes padding and border (in addition to the content) */
 }
 
 body {
@@ -32,3 +32,34 @@ body {
     background-color: #2ddf5c;
     padding: 8px 16px;
 }
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;  /* Removes the bullet points of the list */
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+

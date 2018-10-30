@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; /* now the width includes padding and border (in addition to the content) */
+    box-sizing: border-box;
 }
 
 body {
@@ -9,11 +9,12 @@ body {
 
 .main-header {
     width: 100%;
-    background-color: #2ddf5c;
-    padding: 8px 16px;
     position: fixed;
-    z-index: 1;
     top: 0;
+    left: 0;
+    background: #2ddf5c;
+    padding: 8px 16px;
+    z-index: 1;
 }
 
 .main-header > div {
@@ -28,7 +29,6 @@ body {
     font-size: 22px;
 }
 
-
 .main-nav {
     display: inline-block;
     text-align: right;
@@ -39,7 +39,7 @@ body {
 .main-nav__items {
     margin: 0;
     padding: 0;
-    list-style: none;  /* Removes the bullet points of the list */
+    list-style: none;
 }
 
 .main-nav__item {
@@ -58,12 +58,11 @@ body {
 .main-nav__item a:active {
     color: white;
     border-bottom: 5px solid white;
-
 }
 
-.main-nav__item--cta a { /* cta stands for: CALL TO ACTION */
+.main-nav__item--cta a {
     color: white;
-    background-color: #ff1b68;
+    background: #ff1b68;
     padding: 8px 16px;
     border-radius: 8px;
 }
@@ -71,12 +70,12 @@ body {
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
     color: #ff1b68;
-    background-color: white;
+    background: white;
     border: none;
 }
 
 .main-footer {
-    background-color: black;
+    background: black;
     padding: 32px;
     margin-top: 48px;
 }
@@ -104,7 +103,7 @@ body {
 }
 
 .button {
-    background-color: #0e4f1f;
+    background: #0e4f1f;
     color: white;
     font: inherit;
     border: 1.5px solid #0e4f1f;
